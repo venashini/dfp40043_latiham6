@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+
+<body>
+    <h2>Borang Tempahan</h2>
+
+    <form action="simpan.php" method="post">
+        <table>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td><input type="text" name="nama" id="nama" size="50" required placeholder="Bukan Nama Penuh" autofocus autocomplete="on"></td>
+            </tr>
+            <tr>
+                <td><label for="namakeluarga">Nama Keluarga</label></td>
+                <td><input type="text" name="namakeluarga" id="namakeluarga" value="Ahmad" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="notelefon">No Telefon</label></td>
+                <td><input type="text" name="notelefon" id="notelefon" minlength="10" maxlength="11" required disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Negeri</td>
+                <td>
+                    <input type="text" name="negeri" id="negeri" list="senarai">
+                    <datalist id="senarai">
+                        <option value="Perlis">
+                        <option value="Kedah">
+                        <option value="Penang">
+                      
+                    </datalist>
+                </td>
+            </tr>
+        </table>
+
+        <button type="sumbit">SUMBIT</button>
+        <button type="reset">BATAL</button>
+    </form>
+
+</body>
+
+</html>
